@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage 
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MercadoLivreClone.Views.Menu.MenuView"
+             Visual="Material">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <Grid RowDefinitions="200, *" 
+                  RowSpacing="0">
+                <Grid Grid.Row="0"
+                      RowDefinitions="*,Auto"
+                      ColumnDefinitions="80,*"
+                      Padding="20"
+                      BackgroundColor="{StaticResource PrimaryColor}">
+
+                    <Image Grid.Column="0"
+                           Grid.RowSpan="2"
+                           VerticalOptions="StartAndExpand"
+                           Source="splash_logo.png"
+                           Margin="5,5,25,0"/>
+
+                    <StackLayout Grid.Column="1"
+                                 Grid.Row="0">
+                        <Label Text="Entre na sua conta"
+                               FontAttributes="Bold"/>
+                        <Label Text="Veja os detalhes de envio e personalize sua experiência"
+                               FontSize="12"/>
+                    </StackLayout>
+
+                    <Button Text="Entrar"
+                            Grid.Row="1"
+                            Grid.ColumnSpan="2"
+                            BackgroundColor="#3483FA"
+                            CornerRadius="5"
+                            TextColor="#FFFFFF"/>
+                </Grid>
+                <Grid Grid.Row="1"
+                      RowDefinitions="Auto,Auto,Auto,Auto"
+                      ColumnDefinitions="12,*,*">
+                    <Frame Grid.Row="0"
+                           Grid.ColumnSpan="3">
+                        <Label Text="Inicio"
+                               Grid.Column="1"/>
+                    </Frame>
+
+                    <Frame Grid.Row="1"
+                           Grid.ColumnSpan="3">
+                        <Label Text="Buscar"
+                               Grid.Column="1"/>
+                    </Frame>
+
+                    <Frame Grid.Row="2"
+                           Grid.ColumnSpan="3">
+                        <Label Text="Minhas compras"
+                               Grid.Column="1"/>
+                    </Frame>
+
+                    <Frame Grid.Row="3"
+                           Grid.ColumnSpan="3">
+                        <Label Text="Minha conta"
+                               Grid.Column="1"/>
+                    </Frame>
+                </Grid>
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+</MasterDetailPage>

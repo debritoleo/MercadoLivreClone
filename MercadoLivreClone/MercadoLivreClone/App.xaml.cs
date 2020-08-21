@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MercadoLivreClone.Views.Menu;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace MercadoLivreClone
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MenuView();
         }
 
         protected override void OnStart()
